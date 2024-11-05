@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SYNAPSE SPICE LABS</title>
+  <meta name="author" content="Velile Vamba">
+  <meta content="" name="lorem100">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+slider-2
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+office
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+	<style type="text/css">
+
+    .yellow{
+      background-color: #ffc107;
+    }
+		.carousel-item {
+		  height: 60vh;
+		  min-height: 350px;
+		  background: no-repeat center center scroll;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+
+    .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .wrap {
+  margin: 2rem;
+
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+
+  cursor: pointer;
+}
+
+.main .container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+ 
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, .1),#969389);
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
+
+  transition: transform .6s 1s;
+}
+
+.main .container::before,
+.main .container::after {
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #ffffff;
+
+  position: absolute;
+  z-index: 2;
+
+  opacity: .6;
+  transition: .3s;
+}
+
+.main .container::before {
+  top: 2rem;
+  right: 2rem;
+
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.main .container::after {
+  bottom: 2rem;
+  left: 2rem;
+
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.main .container--active {
+  transition: none;
+}
+
+.main .container--2 {
+  filter: hue-rotate(80deg) saturate(140%);
+}
+
+.main .container--3 {
+  filter: hue-rotate(160deg) saturate(140%);
+}
+
+.main .container p {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.main .wrap:hover .container::before,
+.main .wrap:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.main .abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%);
+  font-size: 1.6rem;
+} 
+
+/*****************************************/
+.solutions {
+  /* The image used */
+  background-image: url(assets/img/bg.jpg);
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.solutions .wrapper{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.solutions h1{
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 48px;
+}
+
+.solutions .panels{
+  list-style-type: none;
+  padding: 0;
+}
+
+.solutions .panels li{
+
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+}
+
+.solutions .panels li div{
+  padding: 10% 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  height: 50vh;
+}
+
+/*// ANIMATION STYLES //*/
+
+.solutions .panels div.back {
+  transform: rotateY(90deg);
+}
+
+.solutions .panels div.front {
+  position: absolute;
+}
+
+.solutions .panels li:hover div.front {
+  animation: twirl 0.2s ease-in forwards;
+}
+.solutions .panels li:hover div.back {
+  animation: twirl 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes twirl {
+  0%{ transform: rotateY(0deg)}
+  100% {transform: rotateY(90deg)}
+}
+
+.why-us {
+  /* The image used */
+  background-image: url(assets/img/bg.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+	</style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        
+        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
+        <a href="/"><img src="assets/img/logobg.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Work</a></li>
+          <li><a href="#faq">Case Studies</a></li>
+          <li><a href="#team">Solutions</a></li>
+		      <li><a href="#contact">Contact Us</a></li>
+        </ul>
+            
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url(assets/img/nihalread.png)">
+          <div class="carousel-caption">
+            <h2 class="display-4">SYNAPSE SPICE LABS</h2>
+            <p class="lead">BCI Researcher. I specialize in developing brain-computer 
+              interface technologies that bridge the gap between human cognition and machines. 
+              My work focuses on improving the precision and responsiveness of these systems to enhance user experiences.</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(assets/img/nihalshooting.png)">
+          <div class="carousel-caption ">
+            <h2 class="display-4">SYNAPSE SPICE LABS</h2>
+            <p class="lead">BCI Researcher with expertise in neural interfaces. 
+              I contribute to the development and integration of BCI 
+              technology in real-world applications, collaborating with industry 
+              leaders and academic teams to advance the next generation of human-computer interaction.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style= "padding-top: 100px; background-image: url(assets/img/nihalspeech.png)" >
+          <div class="carousel-caption covid-block">
+            <h2 class="display-4">Nihal – Founder & CEO</h2>
+            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">
+              As the founder and CEO of Synapse Spice Labs, I am passionate about advancing the field of Brain-Computer Interface (BCI) technology. 
+              At just 21 years old, I bring a fresh perspective and a strong commitment to innovation in human-computer interaction. 
+              My journey in BCI research has equipped me with a deep understanding of neural systems and the challenges associated with developing intuitive, 
+              user-friendly interfaces. 
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </section><!-- #hero -->
+  
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/nihalwork.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Focused on Impact</h3>
+            <p class="">
+              We are a team of passionate BCI researchers and technologists dedicated to advancing brain-computer interface technology. 
+              Our mission is to explore the boundaries of human cognition and machine interaction, 
+              creating innovative solutions that enhance the way people interact with technology.
+            </p>
+            <p>
+              With expertise spanning neural interfaces, signal processing, and artificial intelligence, 
+              we focus on developing intuitive and impactful BCI systems. 
+              Our work is driven by a vision to revolutionize industries like healthcare, assistive technology, and human augmentation.
+            </p>
+            <p>
+              We believe in the power of interdisciplinary collaboration, combining insights from neuroscience, 
+              engineering, and computer science to bring cutting-edge ideas to life. 
+              Our commitment is to push the frontiers of BCI technology and make it accessible, 
+              reliable, and transformative for users around the world.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Work</h2>
+          <p>At Synapse Spice Labs, we are dedicated to pioneering innovations in Brain-Computer Interface (BCI) technology. 
+            Founded by Nihal, a 21-year-old visionary and expert in BCI research, 
+            our mission is to explore and expand the potential of human-computer interaction through cutting-edge neural interface technologies.</p>
+        </div>
+
+        
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section class="call-to-action">
+      <div class="container">
+        
+        <div class="text-center">
+          
+        <div class="section-title">
+          <h2 style="color: #fff;">Our approach</h2>
+        </div>
+
+          <p>At Synapse Spice Labs, our approach is rooted in innovation, collaboration, 
+            and a deep commitment to transforming the way humans interact with technology through Brain-Computer Interface (BCI) systems. 
+            Guided by a passion for pushing the limits of what’s possible, we combine rigorous 
+            research with cutting-edge technology to create meaningful advancements in the field of neurotechnology.</p>
+
+<div class="container-fluid">
+  <div class="col-md-12">
+      <div class="row main">
+          <div class="wrap wrap--3 col-md-3">
+            <h6 style="color: #fff; text-align: right;">01. User-Centric Design </h6>
+              <div class="container container--3 ">
+                  <p>We prioritize creating intuitive and seamless BCI systems that adapt to the needs of the user, 
+                    making technology more accessible and natural to interact with.</p>
+              </div>
+            </div>
+          
+            <div class="wrap wrap--3  col-md-3">
+              <h6 style="color: #fff; text-align: right;">02.   Interdisciplinary Collaboration</h6>
+              <div class="container container--3 ">
+		<p>Our team brings together experts from neuroscience, engineering, 
+      and artificial intelligence, ensuring that our solutions are innovative, practical, and grounded in diverse expertise.</p>
+              </div>
+            </div>
+          
+            <div class="wrap wrap--3 col-md-3">
+              <h6 style="color: #fff; text-align: right;">03. Ethical and Responsible Innovation</h6>
+              <div class="container container--3 ">
+                <p>
+                  We are committed to developing BCI technologies that are safe, secure, and ethically sound, 
+                  addressing privacy and data security while creating real-world impact.</p>
+            
+              </div>
+            </div>
+          
+      </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+
+    <section id="faq" class="solutions">
+      <div class="wrapper">
+        <h1>Case Studies</h1>
+        <ul class="panels">
+          <div class="row">
+          <li class="col-md-4">
+            <div class="front" style="background: #203954">
+              <h6>Problem(Signal Interference in Neural Data)</h6>
+              <p>
+                One of the major challenges in BCI systems is dealing with signal interference from background brain activity. 
+                Neural signals are complex, and isolating specific patterns related to a user’s intentions can be difficult, 
+                particularly in noisy environments or when multiple brain processes are active simultaneously. 
+                This issue can lead to inaccuracies in how the BCI interprets user inputs, reducing the system’s overall reliability.
+              </p>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Solution</h6>
+            <p>
+              To address this, we developed an advanced signal processing algorithm that filters out noise while enhancing relevant neural patterns. 
+              By employing machine learning techniques, we trained our models to better distinguish between meaningful signals and background activity. 
+              This dramatically improved the accuracy of our BCIs, resulting in more reliable performance, even in environments with high levels of brain activity.
+            </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954">
+              <h6>Problem(Limited Usability for Non-Technical Users)</h6>
+              <p>
+                Many BCI systems are designed with researchers or highly technical users in mind, making them less accessible for everyday consumers. 
+                The steep learning curve and complexity of these systems limit their real-world adoption, 
+                especially for individuals with physical disabilities who could benefit the most from intuitive, easy-to-use interfaces.
+              </p>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Solution</h6>
+              <p>
+                We focused on a user-centered design approach, creating a more intuitive interface that requires minimal setup and learning. 
+                By simplifying the user experience and integrating natural language processing (NLP) for voice-assisted commands, 
+                we made our BCI systems more user-friendly. This improved accessibility, 
+                allowing even non-technical users to interact seamlessly with technology using only their thoughts.
+              </p>
+            </div>
+          </li>
+          <li  class="col-md-4">
+            <div class="front" style="background: #203954">
+              <h6>Problem(Privacy and Data Security in BCI Systems)</h6>
+              <p>
+                As BCI technology involves direct access to neural data, concerns about data privacy and security have emerged as a significant barrier to adoption. 
+                Users and stakeholders worry about the potential for misuse of sensitive brain data, particularly in industries like healthcare where privacy is paramount.
+              </p>
+            </div>
+            <div class="back" style="background: #020a20">
+            <h6>Solution</h6>
+              <p>We implemented a robust data encryption and anonymization framework within our BCI systems. 
+                By securing neural data at every stage—from capture to transmission and storage—we ensure that personal information is protected. 
+                Additionally, we introduced user-controlled privacy settings, allowing individuals to manage and restrict access to their neural data. 
+                This solution not only protects privacy but also builds trust in BCI technology across industries</p>
+          </div>
+          </li>
+         
+        </div>
+        
+         
+        </ul>
+      </div>
+    </section>
+<!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" style="text-align: center;">
+      <div class="section-title">
+        <h2>Technology and Security</h2>
+      </div>
+
+        <p>At Synapse Spice Labs, we harness cutting-edge Brain-Computer Interface (BCI) technology to facilitate seamless communication between the human brain and machines.
+           Our systems utilize advanced neural signal processing and machine learning algorithms to accurately decode brain activity in real-time, 
+            enhancing user experience and performance.</p>
+        
+       
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <section id="" class="why-us" style="color: #fff;">
+      <div class="container" style="text-align: center;">
+        <div class="section-title">
+          <h2 style=" color: #fff;">Why Us</h2>
+        </div>
+          <p>At Synapse Spice Labs, we are at the forefront of Brain-Computer Interface (BCI) technology, 
+            driven by a passion for innovation and user-centric design. Led by founder Nihal, 
+            our expert team combines extensive research with practical experience to create intuitive BCI solutions tailored to meet diverse needs. 
+            We prioritize security and ethics, employing advanced encryption and anonymization to protect user data and foster trust. 
+            Our interdisciplinary collaboration among neuroscience, engineering, and artificial intelligence enables us to tackle complex challenges and deliver comprehensive solutions.
+            Ultimately, we are committed to making a real-world impact, enhancing accessibility, 
+            and improving human-computer interaction for a better future. 
+            Choosing Synapse Spice Labs means partnering with a dedicated team focused on advancing technology that benefits society.</p>
+  
+      </div>
+    
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024  <strong><span>Synapse Spice Labs</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
