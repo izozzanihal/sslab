@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cerabra Connect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- you can change the website icon by change the href link -->
+  <link rel="icon" type="image/png" href="./img/cerebra connecte (3).png">
+
+
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./css/coloring.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/txtformatting.css">
+  <link rel="stylesheet" type="text/css" href="./css/shadow.css">
+  <link rel="stylesheet" type="text/css" href="./css/loading.css">
+  <link rel="stylesheet" type="text/css" href="./css/cursor.css">
+  <link rel="stylesheet" type="text/css" href="./css/load.scss">
+  <!-- css end -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="on">
+  <div class="loading" id="loading-box">
+    <div class="device">
+      <div class="device__a">
+        <div class="device__a-1"></div>
+        <div class="device__a-2"></div>
+      </div>
+      <div class="device__b"></div>
+      <div class="device__c"></div>
+      <div class="device__d"></div>
+      <div class="device__e"></div>
+      <div class="device__f"></div>
+      <div class="device__g"></div>
+    </div>
+    <!--div class="loading-item"><div class="loading-progress"></div></div-->
+  </div>
+  <main class="main">
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-nav">
+          <div class="navbar-brand">
+            <!-- You can change it with Image if you want. -->
+            <span class="navbar-brand-txt"><a class="txt-bold type-1" href="/">CEREBRA CONNECT</a></span>
+          </div>
+
+          <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+          <div class="navs" id="navs">
+            <!-- You can change the href value and the text value -->
+            <div class="navs-item notbtn"><a href="#features" class="txt-uppercase">About Us</a></div>
+            <div class="navs-item notbtn"><a href="#features" class="txt-uppercase">Our Work</a></div>
+            <div class="navs-item notbtn"><a href="#features" class="txt-uppercase">Our Mission</a></div>
+            <div class="navs-item notbtn"><a href="#features" class="txt-uppercase">Research & Innovation</a></div>
+            <div class="navs-item"><a href="#"><button class="btn txt-uppercase shadow-sm">Login</button></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->		
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="jumbotron-items">
+          <div class="jumbotron-item">
+            <span class="jumbotron-t">Welcome to CEREBRA CONNECT</span>
+            <p class="jumbotron-d">BCI STARTUP</p>
+            <div class="jumbotron-buttons">
+              <button class="btn" onclick="location.href='#features'">About Us</button>
+              <button class="btn blue" onclick="location.href='#'">Our Work</button>
+            </div>
+          </div>
+          <div class="jumbotron-item">
+            <img src="./img/cerebra connectesq.png" alt="image"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jumbotron end -->
+    <span class="scroll-down"><i class="fas fa-arrow-down"></i></span>
+  </main>
+
+  <!-- features -->
+  <div class="features-box">
+    <h1 class="features-t" id="features">About Us</h1>
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <img class="feature-img" src="./img/6.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">About Cerebra Connect</h2>
+            <p class="feature-info-d">Cerebra Connect, founded by 21-year-old BCI expert Nihal, is dedicated to advancing Brain-Computer Interface technology. We focus on creating intuitive neural systems that bridge human cognition and machines, enhancing communication, control, and interaction.</div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/2.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Our Work</h2>
+            <p class="feature-info-d">At Cerebra Connect, we innovate and collaborate to transform human-computer interactions through advanced Brain-Computer Interface (BCI) technology. Our work enhances communication and control via neural interfaces, driving forward the future of neurotechnology.</p>
+          </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/3.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Our Mission</h2>
+            <p class="feature-info-d">At Cerebra Connect, our mission is to create seamless brain-machine interactions through intuitive Brain-Computer Interface (BCI) technology, unlocking new possibilities in healthcare, communication, and beyond.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Research & Innovation-->
+  <div class="features-box">
+    <h1 class="features-t" id="features">Research & Innovation</h1>
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <img class="feature-img" src="./img/5.png"></img>
+          <div class="feature-info">
+            <h2 class="feature-info-t">Innovative Research</h2>
+            <p class="feature-info-d">At Cerebra Connect, we specialize in developing neural interfaces that improve precision and responsiveness. Our team of researchers is dedicated to exploring the frontiers of BCI technology, focusing on creating solutions that are not only cutting-edge but also practical for real-world applications. By collaborating with industry leaders and academic teams, we ensure that our technologies are at the forefront of innovation.
+              
+            </div>
+      
+  </div>
+  </div>
+  <!-- features end -->
+  <!-- footer -->
+  <footer>
+    <!--<div class="wave">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>--><!--
+    <ul class="social_icon">
+    <li><i class="fa fa-facebook-f" style="font-size:24px"></i></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+    </ul>
+    <p>© 2025 Cerebra Connect. All Rights Reserved by <a href="https://apptechgig.com/" style="color: black;">AppTech Gig</a></p>
+</footer>-->
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+  
+  
+
+  <!-- footer end -->
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/cursor.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>
