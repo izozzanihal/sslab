@@ -1,554 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>CEREBRA CONNECT</title>
-  <meta name="author" content="Velile Vamba">
-  <meta content="" name="lorem100">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  
-
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/cerebra connecte (3).png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/cerebra connecte (3).png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/cerebra connecte (3).png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-	<style type="text/css">
-
-    .yellow{
-      background-color: #000000;
-    }
-		.carousel-item {
-		  height: 60vh;
-		  min-height: 350px;
-		  background: no-repeat center center scroll;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
-
-    .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .wrap {
-  margin: 2rem;
-
-  transform-style: preserve-3d;
-  transform: perspective(100rem);
-
-  cursor: pointer;
-}
-
-.main .container {
-  --rX: 0;
-  --rY: 0;
-  --bX: 50%;
-  --bY: 80%;
-
- 
-  border: 1px solid var(--background-color);
-  border-radius: 1.6rem;
-  padding: 4rem;
-
-  display: flex;
-  align-items: flex-end;
-
-  position: relative;
-  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-
-  background: linear-gradient(hsl(0, 0%, 0%),#ffffff);
-  background-position: var(--bX) var(--bY);
-  background-size: 40rem auto;
-  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
-
-  transition: transform .6s 1s;
-}
-
-.main .container::before,
-.main .container::after {
-  content: "";
-
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #ffffff;
-
-  position: absolute;
-  z-index: 2;
-
-  opacity: .6;
-  transition: .3s;
-}
-
-.main .container::before {
-  top: 2rem;
-  right: 2rem;
-
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
-
-.main .container::after {
-  bottom: 2rem;
-  left: 2rem;
-
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.main .container--active {
-  transition: none;
-}
-
-.main .container--2 {
-  filter: hue-rotate(80deg) saturate(140%);
-}
-
-.main .container--3 {
-  filter: hue-rotate(160deg) saturate(140%);
-}
-
-.main .container p {
-  color: hsl(0, 0%, 0%);
-  font-size: 0.8rem;
-  text-align: left;
-}
-
-.main .wrap:hover .container::before,
-.main .wrap:hover .container::after {
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
-}
-
-.main .abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%);
-  font-size: 1.6rem;
-} 
-
-/*****************************************/
-.solutions {
-  /* The image used */
-  background-image: url(assets/img/cerebra\ connect\ \(2\).png);
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.solutions .wrapper{
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-}
-
-.solutions h1{
-  color: #ffffff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 48px;
-}
-
-.solutions .panels{
-  list-style-type: none;
-  padding: 0;
-}
-
-.solutions .panels li{
-
-  margin: 0;
-  display: block;
-  box-sizing: border-box;
-  float: left;
-}
-
-.solutions .panels li div{
-  padding: 10% 0;
-  text-align: center;
-  color: #ffffff;
-  font-size: 11px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  height: 50vh;
-}
-
-/*// ANIMATION STYLES //*/
-
-.solutions .panels div.back {
-  transform: rotateY(90deg);
-}
-
-.solutions .panels div.front {
-  position: absolute;
-}
-
-.solutions .panels li:hover div.front {
-  animation: twirl 0.2s ease-in forwards;
-}
-.solutions .panels li:hover div.back {
-  animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
-
-@keyframes twirl {
-  0%{ transform: rotateY(0deg)}
-  100% {transform: rotateY(90deg)}
-}
-
-.why-us {
-  /* The image used */
-  background-image: url(assets/img/cerebra\ connect\ \(2\).png);
-
-  /* Set a specific height */
-  min-height: 350px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cerebra Connect</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link id='favicon' rel="shortcut icon" href="images/logo/2.png" type="image/x-png">
 </head>
-
 <body>
-
-  <header id="header" class="fixed-top">
+<!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="page-one" style="background-color: rgb(255, 255, 255);">
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
-
-      <div class="logo float-left">
-        
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/cerebra connect (2).png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Our Work</a></li>
-          <li><a href="#faq">Case Studies</a></li>
-          <li><a href="#team">Solutions</a></li>
-		      <li><a href="#contact">Contact Us</a></li>
+      <a class="navbar-brand" href="#">
+        <img src="images/logo/2.png" alt="logo image" class="logo-apptechgig">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </li>
         </ul>
-            
-      </nav><!-- .nav-menu -->
-
+         
+        </button>
+      </div>
     </div>
-  </header><!-- End #header -->
+  </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section >
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(assets/img/nihalread.png)">
-          <div class="carousel-caption">
-            <h2 class="display-4">Cerebra Connect</h2>
-            <p class="lead">BCI Researcher. I specialize in developing brain-computer interface technologies that bridge the gap between human cognition and machines. My work focuses on improving the precision and responsiveness of these systems to enhance human-computer interaction</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/nihalshooting.png)">
-          <div class="carousel-caption ">
-            <h2 class="display-4">Cerebra Connect</h2>
-            <p class="lead">BCI Researcher with expertise in neural interfaces. I contribute to the development and integration of BCI technology in real-world applications, collaborating with industry leaders and academic teams to advance the next generation of human-computer interaction.</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style= "padding-top: 100px; background-image: url(assets/img/nihalspeech.png)" >
-          <div class="carousel-caption covid-block">
-            <h2 class="display-4">Nihal – Founder & CEO</h2>
-            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">
-              As the founder and CEO of Cerebra Connect, I am passionate about advancing the field of Brain-Computer Interface (BCI) technology. At just 21 years old, I bring a fresh perspective and a strong commitment to innovation in human-computer interaction. My journey in BCI research has equipped me with a deep understanding of neural systems and the challenges associated with developing intuitive, user-friendly interfaces.
-          </div>
-        </div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - THE INTRO SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="home" class="intro-section">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      <!-- START THE CONTENT FOR THE INTRO  -->
+      <div class="col-md-6 intros text-start">
+        <h1 class="display-2">
+          <!--<img src="images/logo/1.png" alt="" class="logo-homepage" >-->
+          <span class="display-2--intro">Pioneering Brain-Computer Interface Solutions for the Future.</span>
+          <span class="display-2--description lh-base">
+           Pioneering Brain-Computer Interface Solutions for the Future.
+          </span>
+        </h1>
+        <button type="button" class="rounded-pill btn-rounded">Get in Touch
+          <span><i class="fas fa-arrow-right"></i></span>
+        </button>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    </div>
-  </section><!-- #hero -->
-  
-
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About Us</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/nihalwork.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h3>Focused on Impact</h3>
-            <p class="">
-              We are a team of passionate BCI researchers and technologists dedicated to advancing brain-computer interface technology. 
-              Our mission is to explore the boundaries of human cognition and machine interaction, 
-              creating innovative solutions that enhance the way people interact with technology.
-            </p>
-            <p>
-              With expertise spanning neural interfaces, signal processing, and artificial intelligence, 
-              we focus on developing intuitive and impactful BCI systems. 
-              Our work is driven by a vision to revolutionize industries like healthcare, assistive technology, and human augmentation.
-            </p>
-            <p>
-              We believe in the power of interdisciplinary collaboration, combining insights from neuroscience, 
-              engineering, and computer science to bring cutting-edge ideas to life. 
-              Our commitment is to push the frontiers of BCI technology and make it accessible, 
-              reliable, and transformative for users around the world.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our Work</h2>
-<p>At Cerebra Connect, we are dedicated to pioneering innovations in Brain-Computer Interface (BCI) technology. 
-Founded by Nihal, a 21-year-old visionary and expert in BCI research, 
-our mission is to explore and expand the potential of human-computer interaction through cutting-edge neural interface technologies.</p>
-
-
-        
-          
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section class="call-to-action">
-      <div class="container">
-        
-        <div class="text-center">
-          
-        <div class="section-title">
-          <h2 style="color: #fff;">Our approach</h2>
-        </div>
-
-        <p>At Cerebra Connect, our approach is rooted in innovation, collaboration, 
-          and a deep commitment to transforming the way humans interact with technology through Brain-Computer Interface (BCI) systems. 
-          Guided by a passion for pushing the limits of what’s possible, we combine rigorous 
-          research with cutting-edge technology to create meaningful advancements in the field of neurotechnology.</p>
-          
-<div class="container-fluid">
-  <div class="col-md-12">
-      <div class="row main">
-          <div class="wrap wrap--3 col-md-3">
-            <h6 style="color: #fff; text-align: right;">01. User-Centric Design </h6>
-              <div class="container container--3 ">
-                  <p>We prioritize creating intuitive and seamless BCI systems that adapt to the needs of the user, 
-                    making technology more accessible and natural to interact with.</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3  col-md-3">
-              <h6 style="color: #fff; text-align: right;">02.   Interdisciplinary Collaboration</h6>
-              <div class="container container--3 ">
-		<p>Our team brings together experts from neuroscience, engineering, 
-      and artificial intelligence, ensuring that our solutions are innovative, practical, and grounded in diverse expertise.</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3 col-md-3">
-              <h6 style="color: #fff; text-align: right;">03. Ethical and Responsible Innovation</h6>
-              <div class="container container--3 ">
-                <p>
-                  We are committed to developing BCI technologies that are safe, secure, and ethically sound, 
-                  addressing privacy and data security while creating real-world impact.</p>
+      <!-- START THE CONTENT FOR THE VIDEO -->
+      <div class="col-md-6 intros text-end">
+        <div class="video-box">
+          <img src="images/services/5bg.png" alt="video illutration" class="img-fluid">
+          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+            <span>
+              
+            </span>
             
-              </div>
-            </div>
-          
+          </a>
+        </div>
       </div>
+    </div>
   </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
 </div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                             START SECTION 3 - THE CAMPANIES SECTION  
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section id="campanies" class="campanies">
+    <div class="container">
+      <div class="row text-center">
+        <h4 class="fw-bold lead mb-3">Trusted by campanies like</h4>
+        <div class="heading-line mb-5"></div>
+      </div>
+    </div>
+    <!-- START THE CAMPANIES CONTENT  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-2">
+          <div class="campanies__logo-box shadow-sm">
+            <img src="images/campanies/Synapse Spice Labs.png" alt="Campany 1 logo" title="Campany 1 Logo" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="campanies__logo-box shadow-sm">
+            <img src="images/campanies/apptechgig.png" alt="Campany 2 logo" title="Campany 2 Logo" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="campanies__logo-box shadow-sm">
+            <img src="images/campanies/zero days.png" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid">
+          </div>
+        </div>
+        <!--<div class="col-md-4 col-lg-2">
+          <div class="campanies__logo-box shadow-sm">
+            <img src="images/campanies/neuralink.png" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="campanies__logo-box shadow-sm">
+            <img src="images/campanies/campany-1.png" alt="Campany 5 logo" title="Campany 5 Logo" class="img-fluid">
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-lg-2">
+          <div class="campanies__logo-box shadow-sm">
+            <img src="images/logo/4 (2).png " alt="Campany 6 logo" title="Campany 6 Logo" class="img-fluid">
+          </div>-->
         </div>
       </div>
-    </section><!-- End Call To Action Section -->
+    </div>
+  </section>
 
-    
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-
-    <section id="faq" class="solutions">
-      <div class="wrapper">
-        <h1>Case Studies</h1>
-        <ul class="panels">
-          <div class="row">
-          <li class="col-md-4">
-            <div class="front" style="background: #000000">
-              <h6>Problem(Signal Interference in Neural Data)</h6>
-              <p>
-                One of the major challenges in BCI systems is dealing with signal interference from background brain activity. 
-                Neural signals are complex, and isolating specific patterns related to a user’s intentions can be difficult, 
-                particularly in noisy environments or when multiple brain processes are active simultaneously. 
-                This issue can lead to inaccuracies in how the BCI interprets user inputs, reducing the system’s overall reliability.
-              </p>
-            </div>
-            <div class="back" style="background: #000000">
-              <h6>Solution</h6>
-            <p>
-              To address this, we developed an advanced signal processing algorithm that filters out noise while enhancing relevant neural patterns. 
-              By employing machine learning techniques, we trained our models to better distinguish between meaningful signals and background activity. 
-              This dramatically improved the accuracy of our BCIs, resulting in more reliable performance, even in environments with high levels of brain activity.
-            </p>
-            </div>
-          </li>
-          <li class="col-md-4">
-            <div class="front" style="background: #000000">
-              <h6>Problem(Limited Usability for Non-Technical Users)</h6>
-              <p>
-                Many BCI systems are designed with researchers or highly technical users in mind, making them less accessible for everyday consumers. 
-                The steep learning curve and complexity of these systems limit their real-world adoption, 
-                especially for individuals with physical disabilities who could benefit the most from intuitive, easy-to-use interfaces.
-              </p>
-            </div>
-            <div class="back" style="background: #000000">
-              <h6>Solution</h6>
-              <p>
-                We focused on a user-centered design approach, creating a more intuitive interface that requires minimal setup and learning. 
-                By simplifying the user experience and integrating natural language processing (NLP) for voice-assisted commands, 
-                we made our BCI systems more user-friendly. This improved accessibility, 
-                allowing even non-technical users to interact seamlessly with technology using only their thoughts.
-              </p>
-            </div>
-          </li>
-          <li  class="col-md-4">
-            <div class="front" style="background: #000000">
-              <h6>Problem(Privacy and Data Security in BCI Systems)</h6>
-              <p>
-                As BCI technology involves direct access to neural data, concerns about data privacy and security have emerged as a significant barrier to adoption. 
-                Users and stakeholders worry about the potential for misuse of sensitive brain data, particularly in industries like healthcare where privacy is paramount.
-              </p>
-            </div>
-            <div class="back" style="background: #000000">
-            <h6>Solution</h6>
-              <p>We implemented a robust data encryption and anonymization framework within our BCI systems. 
-                By securing neural data at every stage—from capture to transmission and storage—we ensure that personal information is protected. 
-                Additionally, we introduced user-controlled privacy settings, allowing individuals to manage and restrict access to their neural data. 
-                This solution not only protects privacy but also builds trust in BCI technology across industries</p>
-          </div>
-          </li>
-         
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                         START SECTION 4 - THE SERVICES  
+///////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="About" class="About">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">About Us</h1>
+      <div class="heading-line mb-1"></div>
+    </div>
+  <!-- START THE DESCRIPTION CONTENT  -->
+    <div class="row pt-2 pb-2 mt-0 mb-3">
+      <div class="col-md-6 border-right">
+        <div class="bg-white p-3">
+          <h2 class="fw-bold text-capitalize text-center">
+          Overview
+          </h2>
         </div>
-        
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 text-start">
+
+          <strong> What is Cerebra Connect? </strong>
+          <p class="fw-light"> 
+           Cerebra Connect is a cutting-edge <strong>Indian startup</strong>  focused on developing Brain-Computer Interface (BCI) 
+           technology that bridges the gap between human cognition and digital systems. Founded by <strong>Nihal VK</strong>, 
+           our mission is to leverage <strong>AI </strong> and <strong>BCI </strong> technologies to transform industries such as healthcare, education, and communication.
+          </p>
+
+           
+            <strong>Nihal VK - Founder of Cerebra Connect: </strong> 
+            <p class="fw-light">
+            Led by <strong>Nihal VK,</strong> a visionary in the realm of <strong>neural interfaces,</strong>  
+            Cerebra Connect aims to revolutionize the world of <strong>BCI</strong>  technology, with a special focus on advancing the <strong>Kerala startup ecosystem.</strong></p>
+            
+
+            <strong>Vision & Mission:</strong>
+            <P class="fw-light"><br>
+
+             <strong>Vision:</strong> 
+              <br>
+              To become a global leader in Brain-Computer Interface solutions, 
+              enabling seamless communication between the human brain and digital platforms.
+
+              <br><br>
+             <strong>Mission:</strong>
+              <br>
+              We aim to empower individuals and industries by developing intuitive, 
+               intelligent connectivity solutions that improve quality of life, productivity, and creativity.
+           </p> 
+            
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE CONTENT FOR THE SERVICES  -->
+  <div class="container">
+   
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="services__content">
+          <!--<div class="icon d-block fas fa-paper-plane"></div>-->
+          <h3 class="display-3--title mt-1" id="services">Services Page</h3>
+          <br><br>
+          <p class="fw-light">
+            <strong class="fw-bold">
+            Brain-Computer Interface Solutions: <br> </strong>
+            At <strong>Cerebra Connect,</strong>  we develop state-of-the-art <strong>BCI solutions</strong> designed for seamless interaction between the human brain and technology. 
+            Whether it's enhancing digital communication or advancing neurotechnological applications, our platform offers reliable and innovative solutions.
+            <br>
+            <br>
+           <strong class="fw-bold"> AI-Powered Communication Tools: <br></strong>
+            Leverage <strong>AI</strong> algorithms that enable real-time data processing and adaptive communication, revolutionizing the way individuals interact with machines.
+            <br>
+            <br>
+            <strong class="fw-bold">Custom Solutions for Startups & Enterprises: <br></strong>
+            As an <strong>Indian startup,</strong> we specialize in providing tailor-made <strong>BCI</strong> solutions for enterprises and <strong>Kerala startups </strong>
+            that require specialized tools for enhancing human-machine interaction.
+            
+          
+          </p>
+          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="services__pic">
+          <img src="images/arts/cclabframe.png" alt="marketing illustration" class="img-fluid" >
+        </div>
+      </div>
+    </div>
+    <!-- START THE WEB DEVELOPMENT CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+        <div class="services__pic">
+          <img src="images/services/2.png" alt="web development illustration" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="services__content">
+          <!--<div class="icon d-block fas fa-code"></div>-->
+          <h3 class="display-3--title mt-1" id="features">Features Page</h3> <br>
+          <br>
+          <p class="fw-light">
+            <strong class="fw-bold">
+            Neural Interface Integration: <br> </strong>
+            We integrate cutting-edge <strong>neural interfaces </strong> that allow users to control devices with just their thoughts, 
+            providing a futuristic experience that enables enhanced productivity and communication.
+            <br>
+            <br>
+           <strong class="fw-bold"> 
+            Real-Time Cognitive Data Processing: <br></strong>
+            Using our proprietary algorithms, <strong>Cerebra Connect</strong> processes cognitive signals in real time, 
+            making it possible for users to control their devices more intuitively and efficiently.
+            <br>
+            <br>
+            <strong class="fw-bold">Seamless Device Integration:<br></strong>
+             Our <strong>BCI solutions</strong> easily integrate with existing hardware, allowing businesses to adopt our technology with minimal disruption.
+            
+          
+          </p>
+          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- START THE CLOUD HOSTING CONTENT  -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="services__content">
+          <!--<div class="icon d-block fas fa-cloud-upload-alt"></div>-->
+          <h3 class="display-3--title mt-1" id="blog">Blog / Resources Page</h3>
+          <p class="lh-lg">
+           <h3 class="display-3--title">Articles:</h3>
+            <ul class="fw-light">
+            <li>The Future of Brain-Computer Interfaces: A Global Perspective</li>
+            <li>How Cerebra Connect is Shaping the BCI Landscape in India</li>
+            <li>Neuralink vs. Indian Startups: A Comparative Analysis of BCI Innovations</li>
+            <li>Cerebra Connect’s Contribution to the Kerala Startup Ecosystem</li>
+            <li>Understanding the Science Behind Brain-Computer Interfaces and AI</li>
+            <li>How BCI is Revolutionizing Healthcare & Education in India</li>
+           </ul>
+          
+           <strong class="display-3--title">Case Studies:</strong> <br>
+           <ul><li class="fw-light">How Cerebra Connect’s technology was implemented in a Kerala-based startup for enhanced user experience.</li></ul>
          
+
+          </p><br>
+
+          <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <span><i class="fas fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="services__pic">
+          <img src="images/services/3.png" alt="cloud hosting illustration" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 5 - THE TESTIMONIALS  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                       START SECTION 6 - THE FAQ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
+                              START SECTION 7 - THE PORTFOLIO  
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+              START SECTION 8 - GET STARTED  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="contact" class="get-started">
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold text-capitalize">Get started</h1>
+      <div class="heading-line"></div>
+      <p class="lh-lg"></p>
+    </div>
+
+    <!-- START THE CTA CONTENT  -->
+    <div class="row text-white">
+      <div class="col-12 col-lg-6 gradient shadow p-3">
+        <div class="cta-info w-100">
+          <p class="lh-lg">
+            Have questions or want to partner with us? Fill out the form below, and our team will get back to you promptly</p>
+          <h3 class="lh-lg">Contact Details</h3>
+          <ul>
+            <li>+91 8281302974</li>
+            <li>synapsespicelabs@gmail.com</li>
+            <li>Cerebra Connect in Synapse Spice Labs, Kerala, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 bg-white shadow p-3">
+        <div class="form w-100 pb-2">
+          <h4 class="display-3--title mb-5">start your project</h4>
+          <form action="#" class="row">
+            <div class="col-lg-6 col-md mb-3">
+              <input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
+            </div>
+            <div class="col-lg-6 col-md mb-3">
+              <input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg">
+            </div>
+            <div class="col-lg-12 mb-3">
+              <input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg">
+            </div>
+            <div class="col-lg-12 mb-3">
+              <textarea name="message" placeholder="message" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
+            </div>
+            <div class="text-center d-grid mt-1">
+              <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
+                submit
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////
+                           START SECTION 9 - THE FOOTER  
+///////////////////////////////////////////////////////////////////////////////////////////////-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- CONTENT FOR THE MOBILE NUMBER  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">+91 8382302974</a>
+        </div>
+      </div>  
+      <!-- CONTENT FOR EMAIL  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+            <line x1="3" y1="19" x2="9" y2="13" />
+            <line x1="15" y1="13" x2="21" y2="19" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">synapsespicelabs@gmail.com</a>
+          
+        </div>
+      </div>
+      <!-- CONTENT FOR LOCATION  -->
+      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+        <div class="contact-box__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="18" y2="6.01" />
+            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+            <line x1="9" y1="4" x2="9" y2="17" />
+            <line x1="15" y1="15" x2="15" y2="20" />
+          </svg>
+        </div>
+        <div class="contact-box__info">
+          <a href="#" class="contact-box__info--title">India, Kerala</a>
+          <p class="contact-box__info--subtitle">Cerebra Connect in Synapse Spice Labs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE SOCIAL MEDIA CONTENT  -->
+  <div class="footer-sm" style="background-color: #212121;">
+    <div class="container">
+      <div class="row py-4 text-center text-white">
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+          connect with us on social media
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/"><i class="fab fa-github"></i></a>
+          <a href="https://in.linkedin.com/in/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+  <div class="container mt-5">
+    <div class="row text-white justify-content-center mt-3 pb-3">
+      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+        <h5 class="text-capitalize fw-bold">Cerebra Connect</h5>
+        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+        <p class="lh-lg">
+          Building digital solutions for a smarter tomorrow.
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">Products</h5>
+        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+        <ul class="list-inline campany-list">
+          <li><a href="https:\\apptechgig.com">apptechgig</a></li>
+          <li><a href="https:\\Synapsespicelab.vercel.app">Synapse Spice Labs</a></li>
+          <li><a href="htttps:\\cerebraconnect">Cerebra Connect</a></li>
+          <li><a href="https:\\ni-hal.info">Ethical Hacking</a></li>
         </ul>
       </div>
-    </section>
-<!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" style="text-align: center;">
-      <div class="section-title">
-        <h2>Technology and Security</h2>
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">useful links</h5>
+        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+        <ul class="list-inline campany-list">
+          <li><a href="https://ni-hal.info/">nihal </a></li>
+        </ul>
       </div>
-
-        <p>At Synapse Spice Labs, we harness cutting-edge Brain-Computer Interface (BCI) technology to facilitate seamless communication between the human brain and machines.
-           Our systems utilize advanced neural signal processing and machine learning algorithms to accurately decode brain activity in real-time, 
-            enhancing user experience and performance.</p>
-        
-       
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <h5 class="text-capitalize fw-bold">contact</h5>
+        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+        <ul class="list-inline campany-list">
+          <li><a href="mailto:synapsespicelab@gmail.com">mail</a></li>
+          <li><a href="tel:+918281302974">call</a></li>
+          <li><a href="https://wa.me/918281302974">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/">instagram</a></li>
+        </ul>
       </div>
-    </section><!-- End Our Team Section -->
-
-    <section id="" class="why-us" style="color: #fff;">
-      <div class="container" style="text-align: center;">
-        <div class="section-title">
-          <h2 style=" color: #fff;">Why Us</h2>
-        </div>
-          <p>At Synapse Spice Labs, we are at the forefront of Brain-Computer Interface (BCI) technology, 
-            driven by a passion for innovation and user-centric design. Led by founder Nihal, 
-            our expert team combines extensive research with practical experience to create intuitive BCI solutions tailored to meet diverse needs. 
-            We prioritize security and ethics, employing advanced encryption and anonymization to protect user data and foster trust. 
-            Our interdisciplinary collaboration among neuroscience, engineering, and artificial intelligence enables us to tackle complex challenges and deliver comprehensive solutions.
-            Ultimately, we are committed to making a real-world impact, enhancing accessibility, 
-            and improving human-computer interaction for a better future. 
-            Choosing Synapse Spice Labs means partnering with a dedicated team focused on advancing technology that benefits society.</p>
-  
-      </div>
-    
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; 2025  <strong><span>Synapse Spice Labs</span></strong>. All Rights Reserved
-      </div>
-      
     </div>
-  </footer><!-- End #footer -->
+  </div>
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <!-- START THE COPYRIGHT INFO  -->
+  <div class="footer-bottom pt-5 pb-5">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12">
+          <div class="footer-bottom__copyright">
+            &COPY; Copyright 2025 <a href="https://cerebraconnect.com">Cerebra Connect</a> | Created by <a href="https://ni-hal.info" target="_blank">Nihal vk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+<!-- BACK TO TOP BUTTON  -->
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
+
+   
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        'touchNavigation': true,
+        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 900,
+        'autoPlayVideos': 'true',
+});
+    
+    </script>
+     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
