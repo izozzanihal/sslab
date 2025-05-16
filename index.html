@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link id='favicon' rel="shortcut icon" href="images/logo/2.png" type="image/x-png">
+    
 </head>
 <body>
 <!-- ////////////////////////////////////////////////////////////////////////////////////////
@@ -21,6 +22,7 @@
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="images/logo/2.png" alt="logo image" class="logo-apptechgig">
+        
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +54,7 @@
       <div class="col-md-6 intros text-start">
         <h1 class="display-2">
           <!--<img src="images/logo/1.png" alt="" class="logo-homepage" >-->
-          <span class="display-2--intro">Pioneering Brain-Computer Interface Solutions for the Future.</span>
+          <span class="display-2--intro">Brain-Computer Interface</span>
           <span class="display-2--description lh-base">
            Pioneering Brain-Computer Interface Solutions for the Future.
           </span>
@@ -64,7 +66,17 @@
       <!-- START THE CONTENT FOR THE VIDEO -->
       <div class="col-md-6 intros text-end">
         <div class="video-box">
-          <img src="images/services/5bg.png" alt="video illutration" class="img-fluid">
+          <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+          <model-viewer class="viewer-container"
+          src="model/helmet.glb" 
+          alt="3D model"
+          auto-rotate 
+          camera-controls 
+          ar
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          ></model-viewer>
           <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
             <span>
               
